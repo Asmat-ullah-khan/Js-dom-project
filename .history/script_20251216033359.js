@@ -1,4 +1,7 @@
 'use strict';
+// document.querySelector('.message').textContent = '🎉 Correct Number';
+// document.querySelector('.number').textContent = 13;
+// document.querySelector('.score').textContent = 10;
 let secrectNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -44,4 +47,22 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
+  // else if (guess > secrectNumber) {
+  //   if (score > 1) {
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //     document.querySelector('.message').textContent = '📈 Too high!';
+  //   } else {
+  //     document.querySelector('.message').textContent = '💥 You lost the game!';
+  //     document.querySelector('.score').textContent = 0;
+  //   }
+  // } else if (guess < secrectNumber) {
+  //   if (score > 1) {
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //     document.querySelector('.message').textContent = '📉 Too low!';
+  //   } else {
+  //     document.querySelector('.message').textContent = '💥 You lost the game!';
+  //   }
+  // }
 });
